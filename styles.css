@@ -170,3 +170,48 @@ label {
     flex: 1;
     text-align: center;
 }
+
+/* 移动端响应式样式 */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .content-section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .history-entry {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .history-entry span {
+        text-align: left;
+    }
+}
+
+/* 触摸反馈效果 */
+.btn {
+    transition: transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}

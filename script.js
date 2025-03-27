@@ -133,6 +133,7 @@ const UI = (() => {
         updateGuessDisplay();
         if (aCount === 4 && bCount === 0) {
             alert('求解完毕！');
+            handleResetSolver();
         }
     }
 
@@ -146,6 +147,7 @@ const UI = (() => {
         };
         Solver.updateSettings(newSettings);
         alert('设置已保存！');
+        showSection('solver');
     }
 
     function handleResetSolver() {
